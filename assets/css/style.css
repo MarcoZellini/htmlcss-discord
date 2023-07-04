@@ -123,6 +123,10 @@ li {
     border-radius: 20px;
 }
 
+.bg-wave {
+    background-image: url("../img/wave.svg");
+}
+
 /* #endregion utilities */
 
 #site_header {
