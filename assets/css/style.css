@@ -18,10 +18,33 @@
     height: 40px;
 }
 
+.debug .h-400 {
+    height: 400px;
+}
+
+.debug .h-300 {
+    height: 300px;
+}
+
 .debug [class^="col-"] {
     height: 100%;
     background-color: red;
     border: 1px dashed black;
+}
+
+.debug .hero {
+    background-color: #fff679;
+    min-height: 500px;
+}
+
+.debug .col-4,
+.debug .col-8 {
+    background-color: palegreen;
+}
+
+.debug .card {
+    background-color: deeppink;
+    min-height: 100px;
 }
 
 /* #endregion debug */
@@ -37,7 +60,8 @@ body {
 /* #region utilities */
 
 :root {
-    --primary-color: #3161e0;
+    --primary-color: #255EE9;
+    --ds-dark: #23272a;
 }
 
 .d-flex {
@@ -50,6 +74,18 @@ body {
 
 .py-4 {
     padding: 1rem 0;
+}
+
+.py-8 {
+    padding: 2rem 0;
+}
+
+.py-12 {
+    padding: 3rem 0;
+}
+
+.my-8 {
+    margin: 2rem 0;
 }
 
 .col-2 {
@@ -106,11 +142,57 @@ body {
 
 .login {
     text-align: right;
+    padding: .5rem;
 }
 
-.login button {
-    padding: .75rem 1rem;
+.login a {
+    padding: .5rem 1rem;
     border-radius: 20px;
     border: 0px;
     background-color: #fff;
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero a {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.hero .download {
+    color: black;
+    background-color: white;
+    padding: .75rem 2rem;
+    border-radius: 40px;
+}
+
+.hero .open {
+    color: white;
+    background-color: var(--ds-dark);
+    padding: .75rem 2rem;
+    border-radius: 40px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+}
+
+section .card {
+    width: 100%;
+}
+
+section img {
+    max-width: 100%;
 }
